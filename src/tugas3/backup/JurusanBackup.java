@@ -3,12 +3,12 @@ package tugas3.backup;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Jurusan {
+public class JurusanBackup {
     private String kode;
     private String nama;
-    private List<Mahasiswa> mhs = new ArrayList<>();
+    private List<MahasiswaBackup> mhs = new ArrayList<>();
 
-    public Jurusan(String kode, String nama) {
+    public JurusanBackup(String kode, String nama) {
         this.kode = kode;
         this.nama = nama;
     }
@@ -29,21 +29,21 @@ public class Jurusan {
         this.nama = nama;
     }
 
-    public void tambahMahasiswa(Mahasiswa mahasiswa) {
-        mahasiswa.tambahJurusan(this);
-        this.mhs.add(mahasiswa);
+    public void tambahMahasiswa(MahasiswaBackup mahasiswaBackup) {
+        mahasiswaBackup.tambahJurusan(this);
+        this.mhs.add(mahasiswaBackup);
     }
 
-    public List<Mahasiswa> getMhs() {
+    public List<MahasiswaBackup> getMhs() {
         return mhs;
     }
 
     public void print() {
         System.out.println("\nKode : " + this.kode);
         System.out.println("Nama : " + this.nama);
-        System.out.println("Memiliki mahasiswa yaitu : \n");
-        for (Mahasiswa mahasiswa:this.mhs) {
-            System.out.println(mahasiswa.getNim() + " - " + mahasiswa.getNama());
+        System.out.println("\nMemiliki mahasiswa yaitu : \n");
+        for (MahasiswaBackup mahasiswaBackup :this.mhs) {
+            System.out.println(mahasiswaBackup.getNim() + " - " + mahasiswaBackup.getNama());
         }
     }
 }

@@ -30,7 +30,6 @@ public class Jurusan {
     }
 
     public void tambahMahasiswa(Mahasiswa mahasiswa) {
-        mahasiswa.tambahJurusan(this);
         this.mhs.add(mahasiswa);
     }
 

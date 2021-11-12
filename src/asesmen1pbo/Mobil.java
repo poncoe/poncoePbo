@@ -6,12 +6,12 @@ public class Mobil {
     private double harga;
     private int stok;
 
-    public Mobil(String merk,  double harga, String tahunKeluaran, int stok) {
-        this.merk = merk;
-        this.harga = harga;
-        this.tahunKeluaran = tahunKeluaran;
-        this.stok = stok;
-    }
+//    public Mobil(String merk,  double harga, String tahunKeluaran, int stok) {
+//        this.merk = merk;
+//        this.harga = harga;
+//        this.tahunKeluaran = tahunKeluaran;
+//        this.stok = stok;
+//    }
 
     public Mobil(String merk, String tahunKeluaran, int stok) {
         this.merk = merk;

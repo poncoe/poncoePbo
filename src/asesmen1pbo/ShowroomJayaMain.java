@@ -18,7 +18,7 @@ public class ShowroomJayaMain {
         String merk = input.nextLine();
         System.out.print("Masukan Tahun Keluaran = ");
         String tahun = input.nextLine();
-        System.out.print("Masukan Tahun Jumlah = ");
+        System.out.print("Masukan Jumlah = ");
         int jumlah = input.nextInt();
         Mobil mobil = new Mobil(merk,tahun,jumlah);
 

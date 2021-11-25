@@ -14,18 +14,20 @@ public class MainActivity {
 
         driver.add(new Driver(1,"Ngojek",123,"B1213E","Motor", 12400));
 
-        System.out.println("\nData Customer :");
+        System.out.println("\nData Customer :\n");
         for(Member printcus:customer){
-            System.out.println("Nama :" + printcus.getNama());
-            System.out.println("Saldonya :" + printcus.getSaldo());
+            System.out.println("Nama : " + printcus.getNama());
+            System.out.println("Saldonya : " + printcus.getSaldo());
+            System.out.println("");
         }
 
-        System.out.println("\nData Driver :");
+        System.out.println("\nData Driver :\n");
         for(Member printdriv:driver){
             System.out.println("Nama :" + printdriv.getNama());
-            //System.out.println("No Kendaraan :" + printdriv.getNoKendaraan());
-            //System.out.println("Jenis Kendaraan : " + printdriv.getJenisKendaraan());
+            System.out.println("No Kendaraan : " + ((Driver) printdriv).getNoKendaraan());
+            System.out.println("Jenis Kendaraan : " + ((Driver) printdriv).getJenis());
             System.out.println("Saldo : " + printdriv.getSaldo());
+            System.out.println("");
         }
 
     }

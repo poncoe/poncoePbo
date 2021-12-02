@@ -5,7 +5,7 @@ public class Kosan extends Rumah {
     private String sisaKamar;
 
     public Kosan(int idKosan, String nama, String deskripsi, String sisaKamar, String pemilik, String jenis, String gambar, String kontakPemilik, String alamat, String wilayah, int harga) {
-        super(nama,deskripsi,pemilik,jenis,gambar,kontakPemilik,alamat,wilayah,harga);
+        super(nama, deskripsi, pemilik, jenis, gambar, kontakPemilik, alamat, wilayah, harga);
         this.idKosan = idKosan;
         this.sisaKamar = sisaKamar;
     }

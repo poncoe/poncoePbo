@@ -5,7 +5,7 @@ public class Kontrakan extends Rumah {
     private String jumlahKamar;
 
     public Kontrakan(int idKontrakan, String nama, String deskripsi, String jumlahKamar, String pemilik, String jenis, String gambar, String kontakPemilik, String alamat, String wilayah, int harga) {
-        super(nama,deskripsi,pemilik,jenis,gambar,kontakPemilik,alamat,wilayah,harga);
+        super(nama, deskripsi, pemilik, jenis, gambar, kontakPemilik, alamat, wilayah, harga);
         this.idKontrakan = idKontrakan;
         this.jumlahKamar = jumlahKamar;
     }
